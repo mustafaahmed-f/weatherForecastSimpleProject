@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Montserrat:wght@300&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark py-4 fw-600">
+            <div class="container py-md-3 py-sm-5">
+                <a class="navbar-brand fw-bold ps-lg-4 ps-md-0" href="#">
+                    <div class="d-flex">
+                        <div class="me-2">
+                            <img src="img/logo@2x.png" alt="" width="64" height="38" />
+                        </div>
+                        <div>
+                            <h1 class="fw-bold">Weather</h1>
+                            <small>tagline goes here</small>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler border-0 p-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav list-unstyled ms-auto mb-2 mb-lg-0 pe-lg-4 pe-md-0 d-flex">
+                        <li class="nav-item liPilledStyle rounded-pill">
+                            <a class="nav-link" aria-current="page" href="E:\Route Academy\Front-end course\week 11\Weather forecast project/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="E:\Route Academy\Front-end course\week 11\Weather forecast project/contactus.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="second-section w-100">
+            <div class="container">
+                <div class="position-relative">
+                    <input type="text" placeholder="Find your location ..." class="form-control rounded-pill border-0 "
+                        id="locationInput" oninput="getforecast(this.value)" />
+                    <input type="button" value="Find" 
+                        class=" rounded-pill border-0 position-absolute text-white " id="findBtn">
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-table">
+            <div class="container py-1">
+                <div class="forecast-container">
+                    <div class="row  overflow-hidden">
+                        <div class="col-lg-4 px-0 ">
+                            <div class="first-day ">
+
+                                <div class="first-date d-flex " >
+                                    <div class="w-50 d-flex align-items-center">
+                                        <h6 class="my-0" id="today-date"></h6>
+                                    </div>
+                                    <div class="w-50 d-flex justify-content-end ">
+                                        <h6 class="d-flex my-0" id="today-day-month"></h6>
+                                    </div>
+                                </div>
+
+                                <div class="first-info text-white" id="todayforecast">
+                                    <h5 id="townName"></h5>
+                                    <div class="d-flex">
+                                        <h2 id="current-temp"></h2>
+                                    <div class="today-forecast-icon py-2 d-flex align-items-center">
+                                        <img>
+                                    </div>
+                                    </div>
+                                    <h6 id="current-forecast-text" class="d-block"></h6>
+                                    <div class="d-flex">
+                                        <span class="d-flex ">
+                                            <img src="img/icon-umberella.png" alt="">
+                                            <h6 id="humidity" class="mb-0  h-100 d-flex align-items-center"></h6>
+                                        </span>
+                                        <span class="d-flex ">
+                                            <img src="img/icon-wind.png" alt="">
+                                            <h6 id="wind-speed" class="mb-0  h-100 d-flex align-items-center">
+                                            </h6>
+                                        </span>
+                                        <span class="d-flex">
+                                            <img src="img/icon-compass.png" alt="">
+                                            <h6 id="wind-direction" class="mb-0  h-100 d-flex align-items-center">
+                                            </h6>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-0 ">
+                            <div class="second-day">
+                                <div class="second-date w-100 text-center text-white d-flex justify-content-center align-items-center">
+                                    <h6 class="my-0"></h6>
+                                </div>
+                                <div class="second-info text-white text-center h-100">
+                                    <div class="second-day-forecast-icon py-2 d-flex align-items-center justify-content-center" id="second-day-forecast-icon">
+                                        <img>
+                                    </div>
+                                    <h5 id="max-temp-second-day"></h5>
+                                    <h6 id="min-temp-second-day"></h6>
+                                    <h6 id="second-day-forecast-text" class="d-block"></h6>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 px-0">
+                            <div class="third-day">
+                                <div class="third-date w-100 text-center text-white d-flex justify-content-center align-items-center">
+                                    <h6 class="my-0"></h6>
+                                </div>
+                                <div class="third-info text-white text-center h-100">
+                                    <div class="third-day-forecast-icon py-2 d-flex align-items-center justify-content-center" id="third-day-forecast-icon">
+                                        <img>
+                                    </div>
+                                    <h5 id="max-temp-third-day"></h5>
+                                    <h6 id="min-temp-third-day"></h6>
+                                    <h6 id="third-day-forecast-text" class="d-block"></h6>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="last-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div>
+                            <div class="position-relative mb-4">
+                                <input type="text" placeholder="Enter your email to subscribe ..." class="form-control rounded-pill border-0 "
+                                    id="emailForSubs" />
+                                <input type="button" value="Subscribe" 
+                                    class=" rounded-pill border-0 position-absolute text-white " id="SubscribeBtn">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="last-section-icons d-flex">
+<div class="each-icon border-0 rounded-circle"><i class="fa-brands fa-facebook-f"></i></div>
+<div class="each-icon border-0 rounded-circle"><i class="fa-brands fa-twitter"></i></div>
+<div class="each-icon border-0 rounded-circle"><i class="fa-brands fa-google-plus-g"></i></div>
+<div class="each-icon border-0 rounded-circle"><i class="fa-brands fa-pinterest-p"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="Java/main.js"></script>
+</body>
+
+</html>

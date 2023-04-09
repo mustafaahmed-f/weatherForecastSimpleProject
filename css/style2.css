@@ -1,0 +1,117 @@
+*{
+    font-family: 'Barlow', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+line-height: 1.5;
+/* color: rgb(191, 193, 200); */
+   
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.middle-section{
+background-color: #1E202B;
+
+}
+.breadcrumb{
+    font-size: 0.928571em;
+    background: rgb(38, 41, 54);
+    border-radius: 40px !important;
+    padding: 20px 30px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: rgb(191, 193, 200);
+}
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+.breadcrumb a::after{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../img/arrow-gray.png);
+    margin : 0 10px;
+    width: 12px;
+    height: 7px;
+
+}
+.breadcrumb p{
+    color: white;
+}
+.middle-content{
+    padding : 70px 0 ;
+}
+.col-md-5{
+    padding: 0 15px;
+}
+.middle-content-left{
+    background: rgb(38, 41, 54);
+}
+.mapC{
+    height: 220px;
+}
+.contact-info{
+    padding: 20px 20px;
+    color: white;
+}
+.contact-info i {
+    width:12px;
+    height: 19px;
+    color: #157B9D;
+}
+.address p {
+    margin-bottom: 14px;
+    padding-left: 20px;
+}
+.phoneAndEmail p{
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+.col-md-6{
+    margin-left: 0;
+}
+@media only screen and (min-width : 1200px){
+    .col-md-6{
+        margin-left: 95px;
+    }
+    
+}
+@media screen and (max-width : 994px){
+    .contact-form-1 {
+        display: block !important;
+    }
+    .col-md-6 {
+        width : 100%
+    }
+}
+
+.col-md-6 h2{
+    font-size: 2.57143em;
+    font-weight: 300;
+    margin: 0px 0px 20px;
+    color: white;
+
+}
+.col-md-6 p{
+    margin-bottom: 14px;
+    color: rgb(191, 193, 200);
+}
+.contact-form input{
+    /* width: 50%; */
+    margin-bottom: 10px;
+    color: white;
+    padding: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(57, 60, 72);
+    margin-right: 0;
+}
+.contact-form textarea{
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    border: 1.6px solid rgb(57, 60, 72);
+    border-radius: 30px;
+}

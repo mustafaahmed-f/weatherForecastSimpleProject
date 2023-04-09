@@ -1,0 +1,236 @@
+*{
+    font-family: 'Barlow', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+line-height: 1.5;
+/* color: rgb(191, 193, 200); */
+   
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.navbar{
+background-color: #1E202B;
+padding: 50px 0 !important;
+}
+.navbar .container{
+    padding: 0 15px !important;
+}
+
+.navbar ul li {
+    padding: 0 14px !important;  
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-size-adjust: 100%;
+    
+}
+.navbar ul li a {color: white !important ;
+    font-weight: 400 !important;
+    font-size: 14px !important  ;
+    font-style : normal;
+/* padding-top: 0;
+padding-bottom: 0; */
+font-style: none;
+padding: 5px 25px;
+border-image: initial;
+}
+.liPilledStyle{
+    border: 2px solid #009ad8;
+}
+.liPilledStyle a { 
+    color:#009ad8 !important ;
+}
+.navbar ul li:hover{
+    border: 2px solid #009ad8;
+    border-radius: var(--bs-border-radius-pill)
+}
+.navbar ul li:hover a{
+    color:#009ad8 !important ;
+    
+}
+.navbar h1{
+    margin-bottom: 5px;
+    font-size: 1.1428571429em;
+}
+.navbar small{
+    font-size: 0.7142857143em;
+}
+.navbar-toggler{
+border-radius: 50%;
+border-color: transparent;
+    /* transition: all 0.1s; */
+}
+
+/* .navbar-toggler:hover {
+border: 2px solid #009ad8 !important;
+
+} */
+.navbar-toggler:hover .navbar-toggler-icon{
+    color:#009ad8 !important ;
+}
+
+.forecast-table .row{
+    border-radius: 10px;
+}
+
+.second-section{
+    background-image: url(../img/banner.png);
+    /* background-position: center center; */
+    background-size: cover;
+    min-height: 350px;
+    padding: 70px 0;
+}
+
+::placeholder{
+    color: #757569 !important;
+    opacity: 1;
+}
+
+#locationInput , #emailForSubs{
+    background-color: #1e202b !important;
+    color: white !important;
+    padding: 20px 50px 20px 20px;
+    
+}
+
+#findBtn ,#SubscribeBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    background-color: #009ad8;
+}
+.forecast-table{
+    background-color: #1E202B;
+}
+
+.forecast-table .row{
+    margin :0
+}
+.first-date h6 ,.second-day h6{
+    font-weight: 400;
+    font-size: 14px;
+}
+.first-date{
+    background-color: #2D303D;
+    color: #bfc1c8;
+    padding: 10px;
+    /* border-top-left-radius: 10px; */
+}
+.first-info{
+    background-color: #323544;
+    padding: 30px 20px;
+}
+.current-forecast-text h6{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+.forecast-container{
+    margin: -150px 0 50px 0;
+}
+.first-info h2{
+    font-size: 6.4285714286rem;
+    font-weight: 700;
+    margin-right: 30px ;
+;
+}
+.first-info h5{
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+#current-forecast-text , #second-day-forecast-text , #third-day-forecast-text{
+    color: #009ad8;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+#humidity , #wind-speed , #wind-direction{
+    color: #bfc1c8;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5
+}
+.first-info span {
+    margin-right: 24px;
+}
+.first-info span img {
+    margin-right: 5px;
+}
+.second-date{
+    background-color: #222530;
+    padding: 10px;
+    
+}
+.second-info{
+    background-color: #262936;
+    padding: 50px 20px 10px;
+}
+#max-temp-second-day , #max-temp-third-day{
+    font-size: 1.71429em;
+    font-weight: 700;
+}
+.second-day-forecast-icon , .third-day-forecast-icon{
+    margin-bottom: 20px;
+}
+#second-day-forecast-text{
+    margin : 20px 0px !important
+}
+.third-date{
+    background-color: #2D303D;
+    color: #bfc1c8;
+    padding: 10px;
+}
+.third-info{
+    background-color: #323544;
+    padding: 50px 20px 10px;
+
+}
+.third-date h6{
+    height: 16.8px;
+}
+.last-section{
+    padding:50px 0;
+    background-color: #262936;
+}
+.last-section p{
+    margin-bottom: 14px;
+
+}
+#SubscribeBtn{
+    padding: 10px 20px;
+}
+.last-section-icons{
+}
+
+.each-icon{
+    cursor: pointer;
+background-color: #1E202B;
+width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+}
+.last-section-icons .each-icon i{
+color: rgb(0, 154, 216);
+font-size: 1.42857em;
+text-align: center;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+}
+
+@media (min-width: 992px){
+    .last-section-icons {
+        margin-left: 97.5px;
+padding: 0 15px;
+
+    }
+}
+
