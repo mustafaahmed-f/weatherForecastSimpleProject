@@ -59,7 +59,7 @@ days[6] = "Saturday";
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 
-let cityName='cairo'
+getforecast('cairo');
 
 async function getforecast(cityName) {
     let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7cb4bf04f0e24d01b10152251232302&q=${cityName}&days=3&aqi=no&alerts=no`)
